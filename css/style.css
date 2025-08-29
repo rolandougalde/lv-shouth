@@ -1,0 +1,89 @@
+body,
+html {
+  height: 100%;
+  background-color: #161616;
+  
+}
+
+#header {
+    background-image: url(../img/StatusGame.png);
+    background-position: 12px center;
+    background-repeat: no-repeat;
+    background-color: #282828;
+    width: 100%;
+    height: 56px;
+    background-size: auto 48px; 
+}
+
+#container {
+  background-image: url("../img/sgback.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: calc(100% - 56px);
+  opacity: 50%;
+}
+#h1 {
+  color: #fff;
+  text-shadow: #555 2px 2px 3px;
+}
+
+
+
+#login-box {
+  width: 240px;
+  background-color: #282828;
+  border-radius: 15px;
+  background-image: url("../img/StatusGame.png"); 
+  background-size: 160px;
+  background-position: center 25px;
+  background-repeat: no-repeat;
+  padding: 80px 0 40px 0;
+}
+#login-box h3 {
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  font-size: 18px;
+  text-align: center;
+}
+#login-box hr {
+  border: 0.5px solid #ffffff;
+  width: 80%;
+}
+#login-box input {
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px;
+  font-size: 12px;
+  margin: 10px auto 0 auto;
+  display: block;
+  width: 70%;
+  font-weight: bold;
+  text-align: center;
+}
+#login-box button {
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 12px;
+    background: linear-gradient(to right, #F6881F 0%, #F6881F 50%, #F6881F 100%);
+    color: #161616;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 66%;
+    cursor: pointer;
+}
+#login-box input::placeholder {
+    color: #000000;
+    font-weight: bold;
+}
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}

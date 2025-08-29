@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>.:: LV South ::.</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css?v=10">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <!-- <link rel="apple-touch-icon" href="/apple-touch-icon.png"> -->
+</head>
+
+<body>
+<!-- <img src = "img/sb-logo.jpg"></img> -->
+    <div id="header"></div>
+    <div id="container"></div>
+    <div id="login-box" class="center">
+        <h3>LOGIN</h3>
+        <hr>
+         <form name="loginform" id="loginform" action="http://engine.lvsouth.com/LoginVerify.asp" method="post">
+            <input type="text" name="customerID" placeholder="Username" id="userbox" maxlength="10" type="text" value="" class="logpassinput"/>
+            <input type="password" name="Password" placeholder="Password" maxlength="10" id="passbox" value="" class="logpassinput">
+            
+            <!--
+            <p id="usertext">Username:</p>
+                 <input name="customerID" id="userbox" maxlength="10" type="text" value="" class="logpassinput"/>
+                 <p id="pastext">Password:</p>
+            
+                 <input type="password" name="Password" maxlength="10" id="passbox" value="" class="logpassinput" >
+            -->
+                 <button id="loginbtn">Enter</button>
+                 <!-- <input class="login-box button" type="submit" value="Enter" id="loginbtn"> -->
+                 <p style="font-size: 10px; color: red; margin: 0; padding-bottom: 0; padding-top: 0; text-align: left; display:none; margin-left: 44px;">Invalid username or password</p>
+                 <input type="hidden" name="ioBB" id="ioBB" />
+                 <input type="hidden" id="Site" name="Site" value="lvsouth" class="inputfield">
+                 <input type="hidden" id="DomainURL" name="DomainURL" value="lvsouth.com" class="inputfield">
+             <input type="hidden" name="IntendedTarget" value="" class="inputfield">
+         </form>
+    </div>
+</body>
+
+</html>
