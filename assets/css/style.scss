@@ -1,0 +1,114 @@
+// 🎨 Variables for easy customization
+$bg-dark: #000000;
+$bg-light: #CFD1D1;
+$text-light: #ffffff;
+$text-shadow: #555;
+$button-gradient: linear-gradient(to right, #044F9C 0%, #044F9C 50%, #044F9C 100%);
+
+// 🌐 Global styles
+html,
+body {
+  height: 100%;
+  background-color: $bg-dark;
+}
+
+// 🧢 Header
+#header {
+  background: {
+    image: url(../img/StatusGame.png);
+    position: 12px center;
+    repeat: no-repeat;
+    size: auto 48px;
+  }
+  background-color: $bg-light;
+  width: 100%;
+  height: 56px;
+}
+
+// 🖼️ Container
+#container {
+  background: {
+    image: url("../img/sgback.jpg");
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+  width: 100%;
+  height: calc(100% - 56px);
+  opacity: 0.5;
+}
+
+// 🧠 Headline
+#h1 {
+  color: $text-light;
+  text-shadow: $text-shadow 2px 2px 3px;
+}
+
+// 🔐 Login Box
+#login-box {
+  width: 240px;
+  background-color: $bg-light;
+  border-radius: 15px;
+  background: {
+    image: url("../img/StatusGame.png");
+    size: 160px;
+    position: center 25px;
+    repeat: no-repeat;
+  }
+  padding: 80px 0 40px 0;
+
+  h3 {
+    color: $text-light;
+    font: {
+      family: Arial, Helvetica, sans-serif;
+      weight: bold;
+      size: 18px;
+    }
+    text-align: center;
+  }
+
+  hr {
+    border: 0.5px solid $text-light;
+    width: 80%;
+  }
+
+  input {
+    border: none;
+    border-radius: 5px;
+    padding: 10px 15px;
+    font-size: 12px;
+    margin: 10px auto 0 auto;
+    display: block;
+    width: 70%;
+    font-weight: bold;
+    text-align: center;
+
+    &::placeholder {
+      color: $bg-dark;
+      font-weight: bold;
+    }
+  }
+
+  button {
+    margin: 20px auto 0 auto;
+    display: block;
+    padding: 12px;
+    background: $button-gradient;
+    color: $text-light;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+    width: 66%;
+    cursor: pointer;
+  }
+}
+
+// 🎯 Centering utility
+.center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
